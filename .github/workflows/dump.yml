@@ -1,0 +1,8 @@
+name: Dump Comprehensive Info
+on: workflow_dispatch
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Data
+        run: echo "${{ toJson(github) }}"
